@@ -1,1 +1,13 @@
 # https://github.com/marketplace/actions/release-drafter
+
+name-template: "v$RESOLVED_VERSION"
+tag-template: "v$RESOLVED_VERSION"
+template: | 
+  ## Changes
+  $CHANGES
+version-resolver:
+  minor:
+    labels:
+      - "enhancement"
+  default: patch # enhancement 라벨인 경우 minor버전을 올리고, 그 이외엔 patch버전을 올린다는 말이다.
+change-template: "- $TITLE @$AUTHOR (#$NUMBER)"
