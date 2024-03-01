@@ -8,8 +8,6 @@
 name: Java CI with Gradle 🚀
 
 on:
-  push:
-    branches: [ "master" , "coin-*", "feature-*" ]
   pull_request:
     branches: [ "master" ]
 
