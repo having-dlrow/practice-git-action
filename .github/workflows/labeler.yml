@@ -12,11 +12,12 @@ jobs:
   label:
 
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pull-requests: write
+    permissions:           # 2. workflows의 권한(접근 범위) 지정
+      contents: read       # 2.1 내용을 읽을 수 있음
+      pull-requests: write # 2.2 PR을 작성할 수 있음
 
     steps:
     - uses: actions/labeler@v4
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
+        sync-labels: true      # 3.1 규칙에 맞지 않는 라벨은 제거
