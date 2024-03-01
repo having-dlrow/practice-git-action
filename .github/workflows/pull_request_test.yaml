@@ -30,7 +30,12 @@ jobs:
  
       # Gradle test를 실행한다
       - name: Test with Gradle
-        run: ./gradlew --info test
+        run: |
+          ./gradlew --info test
+          if [ $? -ne 0 ]; then
+            echo "Gradle test failed. Exiting with an error."
+            exit 1
+          fi
         shell: bash
       
       - run: echo "🍏 This job's status is ${{ job.status }}."
