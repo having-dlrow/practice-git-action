@@ -1,1 +1,1 @@
-release coin
+release coin 
