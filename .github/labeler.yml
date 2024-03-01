@@ -20,6 +20,3 @@ labels:
   'enhancement':
     include:
       - '\bfeature\b'
-  'documentation':
-    include:
-      - '\bdoc\b'
