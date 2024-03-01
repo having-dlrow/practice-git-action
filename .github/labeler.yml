@@ -20,6 +20,8 @@ labels:
   'enhancement':
     include:
       - '\bfeature\b'
+  'enhancement':
+    include:      
       - '\brefactor\b'
   'documentation':
     include:
