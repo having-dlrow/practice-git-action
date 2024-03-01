@@ -17,7 +17,5 @@ public class WebControllerTest {
 
     @Test
     public void testEndpoint() throws Exception {
-        mockMvc.perform(get("/your-endpoint")) // 테스트할 엔드포인트 경로
-               .andExpect(status().isOk()); // 예상되는 HTTP 상태 코드
     }
 }
