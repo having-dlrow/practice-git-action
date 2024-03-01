@@ -14,18 +14,13 @@ labels:
   'bug':
     include:
       - '\bfix\b'
-  'test':
-    include:
-      - '\btest\b'
-  'feature':
-    include:
-      - '\bfeat\b'
   'documentation':
     include:
-      - '\bdocs\b'
-  'refactor':
+      - '\bdocs\b' 
+  'enhancement':
     include:
+      - '\bfeature\b'
       - '\brefactor\b'
-  'chore':
+  'documentation':
     include:
-      - '\bchore\b'
+      - '\bdoc\b'
