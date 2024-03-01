@@ -5,6 +5,7 @@ on:
     branches:
       - 'coin-*'
       - 'feature-*'
+      - 'master'
 jobs:
   Test-With-Gradle:
     runs-on: ubuntu-latest
