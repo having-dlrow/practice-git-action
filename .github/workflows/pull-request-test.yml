@@ -1,4 +1,4 @@
-      # This workflow uses actions that are not certified by GitHub.
+# This workflow uses actions that are not certified by GitHub.
 # They are provided by a third-party and are governed by
 # separate terms of service, privacy policy, and support
 # documentation.
@@ -32,7 +32,11 @@ jobs:
       run: |
         sudo ln -snf /usr/share/zoneinfo/Asia/Seoul /etc/localtime
         echo "Asia/Seoul" | sudo tee /etc/timezone
-      shell: bash   
+      shell: bash
+
+    - name: Grant execute permission for gradlew
+      run: chmod +x gradlew
+      shell: bash        
 
     # Configure Gradle for optimal use in GiHub Actions, including caching of downloaded dependencies.
     # See: https://github.com/gradle/actions/blob/main/setup-gradle/README.md
