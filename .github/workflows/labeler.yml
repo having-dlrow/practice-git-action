@@ -17,6 +17,7 @@ jobs:
       pull-requests: write # 2.2 PR을 작성할 수 있음
 
     steps:
+    - uses: actions/checkout@v4  
     - uses: actions/labeler@v4
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
